@@ -1,0 +1,11 @@
+{
+ "schemaVersion":1,
+ "title":"AI-assisted documentation study / 文档研究",
+ "budgetHours":4,
+ "hypotheses":[
+  {"id":"H1","claim":"Source-linked AI drafts reduce unsupported statements.","source":"Synthetic pilot: 4 unsupported statements among 20 draft claims.","prediction":"A source-linked prompt produces at most 1 unsupported claim in 20.","falsifier":"More than 1 of 20 claims lacks a supporting passage.","method":"Compare two prompts on the same 20 synthetic questions; a reviewer checks every cited passage.","owner":"Research team A","hours":2,"priority":1},
+  {"id":"H2","claim":"A checklist reduces review time without reducing accuracy.","source":"Synthetic review log: median 12 minutes per document.","prediction":"Median time falls below 9 minutes while unsupported-claim recall stays at least 90%.","falsifier":"Median time is 9 minutes or more, or recall is below 90%.","method":"Counterbalance 10 paired documents and record time and missed claims.","owner":"Research team B","hours":3,"priority":1},
+  {"id":"H3","claim":"Showing uncertainty improves reader decisions.","source":"AI-generated proposal; no pilot evidence yet.","prediction":"Readers distinguish unsupported statements more accurately.","falsifier":"","method":"","owner":"","hours":1,"priority":2},
+  {"id":"H4","claim":"A small glossary reduces terminology mismatches.","source":"Synthetic baseline: 5 mismatches across 30 term uses.","prediction":"At most 2 mismatches across the same 30 uses.","falsifier":"3 or more mismatches remain.","method":"Blindly label each term use using the same glossary and count mismatches.","owner":"Research team A","hours":1.5,"priority":2}
+ ]
+}
